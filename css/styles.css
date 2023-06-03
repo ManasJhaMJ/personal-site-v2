@@ -1,0 +1,384 @@
+body{
+    background-color: #0A192F; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.footer {
+    font-family: 'Montserrat'; 
+    color: green;  
+}
+
+.main{
+    padding: 6%;
+    padding-left: 7%;
+    padding-bottom: 10%;
+}
+
+.name {
+    color: antiquewhite;
+    font-family: 'Montserrat';
+    text-align: left;
+    font-size: 70px;
+    padding-bottom: 1%;
+}
+
+@media only screen and (max-width:2000px) {
+  .hello {
+    color: green;
+    font-family: 'Montserrat';
+    text-align: left;
+    padding-top: 10%;
+  }
+}
+
+
+@media only screen and (max-width:600px) {
+  .hello {
+    color: green;
+    font-family: 'Montserrat';
+    text-align: left;
+    padding-top: 30%;
+  }
+
+}
+
+.web-d {
+    color: rgb(198, 191, 180);
+    font-family: 'Montserrat';
+    text-align: left;
+    font-size: 30px;
+}
+
+.intro {
+    color: rgb(93, 87, 77);
+    font-family: 'Montserrat';
+    text-align: left;
+    padding-top: 1%;
+}
+
+.top {
+    color: green;
+    font-family: 'Montserrat';
+    text-align: center;    
+}
+
+.middle2 {
+    color: antiquewhite;
+    font-family: 'Montserrat';
+    text-align: right;       
+}
+
+.bottom {
+    color: rgb(198, 191, 180);
+    font-family: 'Montserrat';
+    text-align: right; 
+    padding: 10%;  
+}
+
+#about {
+    text-align: left;
+    padding: 6%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+#header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: -1;
+}
+
+.img-small{
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+}
+@media only screen and (max-width:2000px) {
+  .handles {
+    position: fixed;
+    left: 95%;
+    bottom: 0%;
+    z-index: 1;
+    padding-right: 10%;
+  }
+}
+@media only screen and (max-width:600px) {
+  .handles {
+    position: fixed;
+    left: 87%;
+    bottom: 0%;
+    z-index: 1;
+    padding-right: 10%;
+  }
+}
+
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width:2000px) {
+  .rotate {
+    position: fixed;
+    left: 90.5%;
+    bottom: 50%;
+    z-index: 1;
+  }
+}
+
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.photo {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin: 10px;
+    
+}
+
+.button-56 {
+    align-items: center;
+    background-color: antiquewhite;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 10%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-56:after {
+    background-color: green;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: green;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 10%) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
+
+.image {
+    position:relative;
+    width:280px;
+    height:280px;
+    float: left;
+}
+.image img {
+    width:100%;
+    vertical-align:top;
+    padding: 10px;
+}
+.image:before {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgb(32, 107, 32);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:before {
+    opacity:0.95;
+}
+.image:hover:before {
+    opacity:0.3;
+}
+
+.about {
+    float: right;
+}
+
+/* portfolio grid */
+
+.container {
+    position: relative;
+    width: 500px;
+    padding: 40px;
+    display: inline-block;
+    width: auto;
+    margin: 0px;
+  }
+  
+  .image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: transparent;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+.hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+.contact-text {
+    color: antiquewhite;
+    font-family: 'Montserrat';
+    padding: 1%;
+    padding-bottom: 3.5%;
+}
+
+.button1 {
+    border-radius: 4px;
+    background-color: green;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+  .button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+  .button1:hover span {
+    padding-right: 25px;
+}
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.contact {
+    padding-bottom: 10%;
+    width: 100%;
+    justify-content: center;
+}
+
+@media only screen and (min-width:775px) {
+  .titleimg {
+    top: 50%;
+    float: right;
+    width: 45%;
+    height: 50%;
+  }  
+}
+
+@media only screen and (max-width:775px) {
+  .titleimg {
+    display: none;
+    top: 50%;
+    float: right;
+  }  
+}
+
+@media only screen and (max-width:650px) {
+  .bottom-2 {
+    color: rgb(198, 191, 180);
+    font-family: 'Montserrat';
+    text-align: right; 
+    padding: 10%; 
+    font-size: 85%; 
+  }
+}
+
+.bottom-2 {
+  color: rgb(198, 191, 180);
+  font-family: 'Montserrat';
+  text-align: right; 
+  padding: 10%; 
+}
+
